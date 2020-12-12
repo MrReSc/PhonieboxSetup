@@ -50,3 +50,31 @@ Das [Problem](https://github.com/MiczFlor/RPi-Jukebox-RFID/issues/1189#issuecomm
         sleep $polling_rate
     done
 ```
+
+### Booten beschleunigen
+Die Anleitung habe ich [hier](https://splittscheid.de/faqs-zu-meiner-phoniebox/#bootspeedup) gefunden.
+
+Tweaks in der `/boot/config.txt`:
+```bash
+sudo sh -c "echo 'dtoverlay=disable-bt' >> /boot/config.txt"
+sudo sh -c "echo 'boot_delay=0' >> /boot/config.txt"
+sudo sh -c "echo 'disable_splash=1' >> /boot/config.txt"
+sudo sh -c "echo '#initial_turbo=30' >> /boot/config.txt"
+```
+Deaktvieren von Exim4
+```bash
+sudo update-rc.d exim4 remove
+```
+
+IPv6 deaktivieren
+```bash
+sudo sh -c "echo 'net.ipv6.conf.all.disable_ipv6 = 1' >> /etc/sysctl.conf"
+sudo sysctl -p
+```
+Deaktivieren von weiteren „unnötigen“ Diensten
+```bash
+# Damit kann man Tasten einer Tastatur Befehle zuordnen
+sudo systemctl disable triggerhappy.service 
+# Deaktiviert den Bluetooth Dienst
+sudo systemctl disable hciuart.service
+```
