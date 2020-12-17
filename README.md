@@ -34,7 +34,7 @@ Die Lautstärke für den Startup Sound ist standardmässig auf `0`. Kann im WebU
 
 ### Ausschalten mit OnOff SHIM
 Wenn der Pi mit dem `OnOff SHIM` ausgeschaltet wird, wird beim erneuten Starten die Wiedergabe automatisch fortgesetzt.
-Das [Problem](https://github.com/MiczFlor/RPi-Jukebox-RFID/issues/1189#issuecomment-743426526) wurde gelöst, indem dann die Datei `/usr/bin/cleanshutd` angepasst hat. Ich habe den original Befehl auskommentiert und mit dem Befehl der Phoniebox ersetzt.
+Das [Problem](https://github.com/MiczFlor/RPi-Jukebox-RFID/issues/1189#issuecomment-743426526) wurde gelöst, indem ich die Datei `/usr/bin/cleanshutd` angepasst habe. Ich habe den original Befehl auskommentiert und mit dem Befehl der Phoniebox ersetzt.
 
 ```bash
     while [ "$daemon" = "on" ]; do
