@@ -8,7 +8,6 @@ Dies ist eine kurze Anleitung meines [Phoniebox](https://github.com/MiczFlor/RPi
 * [KKmoon IC Kartenlesegerät](https://www.amazon.de/dp/B011XI2DE8/ref=pe_3044161_185740101_TE_item)
 * [Uonlytech 2m glow Glasfaserkabel](https://www.amazon.de/dp/B081JY4ZMJ/ref=pe_3044161_185740101_TE_item)
 * [Pimoroni OnOff SHIM](https://www.pi-shop.ch/pimoroni-onoff-shim)
-* 2 x [Brass M2.5 Standoffs 16mm](https://www.pi-shop.ch/brass-m2-5-standoffs-16mm-tall-black-plated-2er-pack)
 * [KABEL USB TYPE-C 2.0 - USB 2.0 MICRO-B](https://www.conrad.ch/de/p/delock-usb-2-0-anschlusskabel-1x-usb-2-0-stecker-micro-b-1x-usb-c-stecker-1-00-m-schwarz-1371594.html)
 * [FT USB-C F/F PLAIN HOLE](https://www.conrad.ch/de/p/xlr-adapter-usb-c-buchse-auf-usb-c-buchse-adapter-cp30201x-cliff-inhalt-1-st-2239986.html)
 * [AUDAC TR2070](https://www.brack.ch/audac-entstoerfilter-tr2070-520216) (Störgeräusche [Problem](https://github.com/MiczFlor/RPi-Jukebox-RFID/issues/341))
