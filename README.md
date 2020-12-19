@@ -77,3 +77,54 @@ sudo systemctl disable triggerhappy.service
 # Deaktiviert den Bluetooth Dienst
 sudo systemctl disable hciuart.service
 ```
+
+### GPIO config
+Die angeschlossenen Buttons können in der Datei `~/RPi-Jukebox-RFID/settings/gpio_settings.ini` angepasst werden.
+
+```
+DEFAULT]
+enabled: True
+
+[PlayPause]
+enabled: True
+Type: Button
+Pin: 27
+pull_up: True
+hold_time: 0.3
+functionCall: functionCallPlayerPause
+
+[VolumeUp]
+enabled: True
+Type:  Button
+Pin: 5
+pull_up: True
+hold_time: 0.3
+hold_repeat: True
+functionCall: functionCallVolU
+
+[VolumeDown]
+enabled: True
+Type:  Button
+Pin: 6
+pull_up: True
+hold_time: 0.3
+hold_repeat: True
+functionCall: functionCallVolD
+
+[NextSong]
+enabled: True
+Type:  Button
+Pin: 23
+pull_up: True
+hold_time: 0.3
+functionCall: functionCallPlayerNext
+
+[PrevSong]
+enabled: True
+<pre>Type:  Button
+Pin: 22
+pull_up: True
+hold_time: 0.3
+functionCall: functionCallPlayerPrev
+```
+Nach dem Ändern der Datei kann der Service mit `sudo systemctl restart phoniebox-gpio-control` neu gestartet werden.
