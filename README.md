@@ -1,7 +1,10 @@
 # PhonieboxSetup
 Dies ist eine kurze Anleitung meines [Phoniebox](https://github.com/MiczFlor/RPi-Jukebox-RFID) Setups.
 
+<img src="pictures/IMG_20201217_145258_706.jpg" width="425"/>
+
 ## Einkaufsliste
+* Die Box ist Secondhand (Innenmasse: L 23cm x H 14.5cm x T 10.5cm)
 * [Adata PowerPack PT100 10000mAh](https://www.galaxus.ch/de/s1/product/adata-powerpack-pt100-10000mah-powerbank-6337123)
 * [Trust Leto 2.0 USB Lautsprecher](https://www.amazon.de/dp/B00JRW0M32/ref=pe_3044161_185740101_TE_item)
 * [American Style Standard Arcade Tasten](https://www.amazon.de/dp/B07GBSJX2H/ref=pe_3044161_185740101_TE_item)
@@ -11,6 +14,10 @@ Dies ist eine kurze Anleitung meines [Phoniebox](https://github.com/MiczFlor/RPi
 * [KABEL USB TYPE-C 2.0 - USB 2.0 MICRO-B](https://www.conrad.ch/de/p/delock-usb-2-0-anschlusskabel-1x-usb-2-0-stecker-micro-b-1x-usb-c-stecker-1-00-m-schwarz-1371594.html)
 * [FT USB-C F/F PLAIN HOLE](https://www.conrad.ch/de/p/xlr-adapter-usb-c-buchse-auf-usb-c-buchse-adapter-cp30201x-cliff-inhalt-1-st-2239986.html)
 * [AUDAC TR2070](https://www.brack.ch/audac-entstoerfilter-tr2070-520216) (Störgeräusche [Problem](https://github.com/MiczFlor/RPi-Jukebox-RFID/issues/341))
+
+## Box
+* [Bohr- und Sprühschalblone](docs/Schalterplatten.odg)
+* `SVG` der [Symbole](docs/icons.svg)
 
 ## Installation
 * Auf der `boot` Partition wurde die Datei `ssh` und `wpa_supplicant.conf` erstellt wie im [Wiki](https://github.com/MiczFlor/RPi-Jukebox-RFID/wiki/INSTALL-stretch#installation-and-configuration-via-ssh--headless-installation) beschrieben.
